@@ -223,7 +223,7 @@ def cleanedges_general(img, build=True, wht_img=None, check=False, quiet=False, 
 	bad2d = np.where((filt != 0) & (filt != 1))   #Returns two arrays, one of x and one of y coordinates for the bad pixels
 
 	# Set random seed for repeatable "random" results
-    	random.seed(16483)
+	random.seed(16483)
 	
 	# Create array of random numbers with mean of 0 and sigma of 1
 	ranarr = np.random.normal(loc=0.0, scale=1.0, size=bad2d[0].shape[0])
